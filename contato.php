@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Contato DVulg</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="css/3-col-portfolio.css" rel="stylesheet">
+    <link href="css/round-about.css" rel="stylesheet">
+
+
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+          <div class="container">
+              <a class="navbar-brand" href="index.php">DVulg</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive" >
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.php">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="sobre.php">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.php">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contato.php">Contato
+                       <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+    </nav>
+    
+    <div class="container">
+    <br/><br/>
+        <div class="row" >
+         <div class="container" align="center">
+          <div class="clearfix visible-xs" ></div>
+            <h1 class="display-4" >Quer falar conosco?</h1>
+            <h5 class="lead" >Abaixo estão alguns meios de nos comunicarmos.</h5>
+            <hr class="my-4">
+         </div>
+        </div>
+    
+    <div class="container" align="center">
+       <div class="row">
+           <div class="col-md-6">
+               <div class="well well-sm">
+                   <form class="form-horizontal" method="post">
+                       <fieldset>
+                           <legend class="display-4">Contate-nos</legend>
+                           <div class="form-group">
+                               <div class="col-md-10 col-md-offset-1">
+                                   <input id="fname" name="nome" type="text" placeholder="Nome Todo" class="form-control">
+                               </div>
+                           </div>
+                           <div class="form-group">
+                               <div class="col-md-10 col-md-offset-1">
+                                   <input id="lname" name="endereco" type="text" placeholder="Endereço" class="form-control">
+                               </div>
+                           </div>
+
+                           <div class="form-group">
+                               <div class="col-md-10 col-md-offset-1">
+                                   <input id="email" name="email" type="text" placeholder="Email" class="form-control">
+                               </div>
+                           </div>
+
+                           <div class="form-group">
+                               <div class="col-md-10 col-md-offset-1">
+                                   <input id="phone" name="telefone" type="text" placeholder="Telefone" class="form-control">
+                               </div>
+                           </div>
+
+                           <div class="form-group">
+                               <div class="col-md-10 col-md-offset-1">
+                                   <textarea class="form-control" id="message" name="mensagem" placeholder="Qual a sua dúvida?" rows="7"></textarea>
+                               </div>
+                           </div>
+
+                           <div class="form-group">
+                               <div class="col-md-12">
+                                   <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                               </div>
+                           </div>
+                       </fieldset>
+                   </form>
+               </div>
+           </div>
+           
+           
+           <div class="col-md-6">
+               <div>
+                   <div class="panel panel-default">
+                       <div class="panel-body text-center">
+                           <p class="display-4">Endereço</p>
+                           <div class="lead">
+                           R. Pastor Abelar Suzano de Siqueira, 377 - Pres. Costa e Silva<br />
+                           Itaperuna - RJ, 28300-000<br />
+                           #(22) 3823-6118<br />
+                           dvulgsolucoes.com.br<br />
+                           08:00 - 18:00<br />
+                           Nosso Escritório<br />
+                           </div>
+                           <hr />
+                           <div id="map1" class="map">  </div>
+                           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14879.783376755939!2d-41.8977839!3d-21.
+                                   1943102!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1da0cdfef9f39db4!2sDvulg+-+Ag%C3%AAncia+Multim%C3%ADdia!5e0!3m2!1spt-BR!2sbr!4v1508386648074" 
+                                   width="100%" height="300" frameborder="0" style="border:0" allowfullscreen>
+                               
+                           </iframe>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+ </div>
+    
+ <footer class="py-1 bg-dark ">
+      <nav class="navbar navbar-expand-md" >
+          <div class="container-fluid">
+              <p class="m-0 text-left text-white">Copyright &copy; 2017</p>
+              <p class="m-0 text-right text-white">Desenvolvimento DVulg</p>
+          </div>
+      </nav>
+ </footer>
+    
+    
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/popper/popper.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+
+<script type="text/javascript">
+    jQuery(function ($) {
+        function init_map1() {
+            var myLocation = new google.maps.LatLng(38.885516, -77.09327200000001);
+            var mapOptions = {
+                center: myLocation,
+                zoom: 16
+            };
+            var marker = new google.maps.Marker({
+                position: myLocation,
+                title: "Property Location"
+            });
+            var map = new google.maps.Map(document.getElementById("map1"),
+                mapOptions);
+            marker.setMap(map);
+        }
+        init_map1();
+    });
+</script>
+
+
+
+
+</body>
+</html>
